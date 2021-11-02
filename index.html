@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'>
+	<title>Integrate with Zapier</title>
+	<style>
+		.img-example {
+				width: 740px;
+		}
+	</style>
+</head>
+<body>
+	<section style="width: 750px; margin: 0 25%">
+		<h1>Integrate with Zapier</h1>
+		<h2>How to create a Zapier Integration with WiseHer</h2>
+		<p>
+			When WiseHer and Zapier have been connected, you can create Zaps based on several different triggers, to get started:
+		</p>
+
+		<p>
+			First log in or create an account at www.zapier.com and click on "Create Zap" on your dashboard or Zaps list.
+		</p>
+
+		<h3>1. Select a Trigger</h3>
+		<p>
+			A trigger is an event that starts a Zap. Once you've set up a Zap, Zapier will monitor for that trigger event.
+			Example. If you want to know when new user was registered in WiseHer, you can select related trigger
+			(please see configure options bellow)
+		</p>
+
+		<img class="img-example" src="./assets/trigger.png" />
+
+
+		<h3>2. Select an Account</h3>
+		<p>
+			Once you select a trigger, select or create new account and provide API key, that you can receive via contact support
+			info@wiseher.com
+		</p>
+
+		<img class="img-example" src="./assets/account.png" />
+
+		<h3>3. Select an Action</h3>
+		<p>
+			The next steps for setting up an action are similar to setting up a trigger. This step is telling Zapier you wish
+			to trigger the action. Example. After user registration (emited trigger in previous step) you can send information
+			about it to different application that available in Zapier.
+		</p>
+
+		<img class="img-example" src="./assets/action.png" />
+
+
+		<h3>4. Configure your Trigger</h3>
+		<h4>New User</h4>
+		<p><strong>Description:</strong> Provide information after user register in WiseHer.</p>
+		<strong>Available fields:</strong>
+		<ul>
+			<li>First Name: The first name of the user.</li>
+			<li>Last Name: The last name of the user.</li>
+			<li>Email: The email name of the user.</li>
+			<li>Office Phone: The office phone number of the user.</li>
+			<li>Country: The country name of the user.</li>
+			<li>Timezone: The timezone of the user.</li>
+			<li>Is Expert: Is the user an expert or not.</li>
+		</ul>
+
+		<img class="img-example" src="./assets/new_user_props.png" />
+
+		<h4>Booked Call</h4>
+		<p><strong>Description:</strong> Provide information after call was booked.</p>
+		<strong>Available fields:</strong>
+		<ul>
+			<li>Expert Name: The name of the expert.</li>
+			<li>Expert ID: The unique identification value of the expert.</li>
+			<li>Expert Email: The email name of the expert.</li>
+			<li>Subscription Name: The name of the subscription.</li>
+			<li>User Name: The name of the user.</li>
+			<li>User ID: The unique identification value of the user.</li>
+			<li>User Email: The email name of the user.</li>
+			<li>Payment Amount: The amount of booked call.</li>
+		</ul>
+
+		<img class="img-example" src="./assets/booked_call_props.png" />
+
+		<h4>That's it, you can turn on your Zap and enjoy!</h4>
+	</section>
+</body>
+</html>
