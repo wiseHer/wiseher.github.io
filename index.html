@@ -45,40 +45,127 @@
 
 		<img class="img-example" src="./assets/action.png" />
 
-
-		<h3>4. Configure your Trigger</h3>
-		<h4>New User</h4>
-		<p><strong><i>Description</i></strong> Provide information after user register.</p>
+		<p>Select your corresponding trigger (list described below)</p>
+		<h4>That's it, you can turn on your Zap and enjoy!</h4>
+		<hr >
+		<h3>List of available Trigger</h3>
+		<h4>1. New User</h4>
+		<p><strong><i>Description:</i></strong> Provide information after user register.</p>
 		<strong><i>Available fields:</i></strong>
 		<ul>
 			<li>First Name: The first name of the user.</li>
 			<li>Last Name: The last name of the user.</li>
 			<li>Email: The email name of the user.</li>
-			<li>Office Phone: The office phone number of the user.</li>
 			<li>Country: The country name of the user.</li>
+			<li>Office Phone: The office phone number of the user.</li>
 			<li>Timezone: The timezone of the user.</li>
 			<li>Is Expert: Is the user an expert or not.</li>
+			<li>Channel Name: Name of channel, which user was connected</li>
 		</ul>
 
-		<img class="img-example" src="./assets/new_user_props.png" />
+		<img class="img-example" src="./assets/new_user.png" />
 
-		<h4>Booked Call</h4>
+		<h4>2. Booked Call</h4>
 		<p><strong><i>Description:</i></strong> Provide information after call was booked.</p>
 		<strong><i>Available fields:</i></strong>
 		<ul>
-			<li>Expert Name: The name of the expert.</li>
-			<li>Expert ID: The unique identification value of the expert.</li>
-			<li>Expert Email: The email name of the expert.</li>
-			<li>Subscription Name: The name of the subscription.</li>
-			<li>User Name: The name of the user.</li>
 			<li>User ID: The unique identification value of the user.</li>
+			<li>User Name: The name of the user.</li>
 			<li>User Email: The email name of the user.</li>
+			<li>Expert ID: The unique identification value of the expert.</li>
+			<li>Expert Name: The name of the expert.</li>
+			<li>Expert Email: The email name of the expert.</li>
 			<li>Payment Amount: The amount of booked call.</li>
+			<li>Subscription Name: The name of the subscription.</li>
 		</ul>
 
-		<img class="img-example" src="./assets/booked_call_props.png" />
+		<img class="img-example" src="./assets/booked_call.png" />
 
-		<h4>That's it, you can turn on your Zap and enjoy!</h4>
+		<h4>3. Add User to Channel Trigger</h4>
+		<p><strong><i>Description:</i></strong> Provide information after user was joined to channel.</p>
+		<strong><i>Available fields:</i></strong>
+		<ul>
+			<li>First Name: The first name of the user.</li>
+			<li>Last Name: The last name of the user.</li>
+			<li>Email: The email name of the user.</li>
+			<li>Country: The country name of the user.</li>
+			<li>Office Phone: The office phone number of the user.</li>
+			<li>Timezone: The timezone of the user.</li>
+			<li>Is Expert: Is the user an expert or not.</li>
+			<li>Channel Name: Name of channel, which user was connected</li>
+		</ul>
+
+		<img class="img-example" src="./assets/user_join_to_channel.png" />
+
+		<h4>4. Join Guest to Call Trigger</h4>
+		<p><strong><i>Description:</i></strong> Provide information after guest was joined to call.</p>
+		<strong><i>Available fields:</i></strong>
+		<ul>
+			<li>First Name: The first name of the user.</li>
+			<li>Last Name: The last name of the user.</li>
+			<li>Email: The email name of the user.</li>
+			<li>Call ID: The unique identification value of the call.</li>
+		</ul>
+
+		<img class="img-example" src="./assets/join_guest_to_call.png" />
+
+		<h4>5. User Subscription Created Trigger</h4>
+		<p><strong><i>Description:</i></strong> Provide information after user subscribe to subscription.</p>
+		<strong><i>Available fields:</i></strong>
+		<ul>
+			<li>User ID: The unique identification value of the user.</li>
+			<li>User Name: The name of the user.</li>
+			<li>User Email: The email name of the user.</li>
+			<li>Channel Name: Name of channel, which user was connected</li>
+			<li>Subscription Name: The name of the subscription.</li>
+			<li>Price Per Month: Described price that need to pay per month.</li>
+			<li>Price Per Unit: Described price for one unit in system.</li>
+			<li>Units Per Month: Described how many units need to pay per month.</li>
+		</ul>
+
+		<img class="img-example" src="./assets/user_subscription.png" />
+
+		<h4>6. User Subscription Canceled Trigger</h4>
+		<p><strong><i>Description:</i></strong> Provide information after user cancel the subscription.</p>
+		<strong><i>Available fields:</i></strong>
+		<ul>
+			<li>User ID: The unique identification value of the user.</li>
+			<li>User Name: The name of the user.</li>
+			<li>User Email: The email name of the user.</li>
+			<li>Channel Name: Name of channel, which user was connected</li>
+			<li>Subscription Name: The name of the subscription.</li>
+			<li>Price Per Month: Described price that need to pay per month.</li>
+			<li>Price Per Unit: Described price for one unit in system.</li>
+			<li>Units Per Month: Described how many units need to pay per month.</li>
+		</ul>
+
+		<img class="img-example" src="./assets/user_subscription.png" />
+
+		<h4>7. Call Completed Trigger</h4>
+		<p><strong><i>Description:</i></strong> Provide information after call was completed.</p>
+		<strong><i>Available fields:</i></strong>
+		"user_id": 1,
+		"user_name": "Test User Name",
+		"user_email": "test@email.com",
+		"expert_id": 2,
+		"expert_name": "Test Expert Name",
+		"expert_email": "test_expert@email.com",
+		"call_start_time": "2021-10-31 15:30:00+02",
+		"call_id": "1111-22222-333333"
+
+		<ul>
+			<li>User ID: The unique identification value of the user.</li>
+			<li>User Name: The name of the user.</li>
+			<li>User Email: The email name of the user.</li>
+			<li>Expert ID: The unique identification value of the expert.</li>
+			<li>Expert Name: The name of the expert.</li>
+			<li>Expert Email: The email name of the expert.</li>
+			<li>Call Start Time: Datetime when call was started.</li>
+			<li>Call ID: The unique identification value of the call.</li>
+		</ul>
+
+		<img class="img-example" src="./assets/call_completed.png" />
+
 	</section>
 </body>
 </html>
